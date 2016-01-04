@@ -1,0 +1,20 @@
+{
+  "name": "boligf-landingpage",
+  "version": "1.0.0",
+  "authors": [],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://boligf.dk",
+  "dependencies": {
+    "foundation-sites": "~6.1.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
