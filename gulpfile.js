@@ -18,8 +18,10 @@ gulp.task('sass', function() {
 });
 
 gulp.task('copy', function() {
-   return gulp.src('src/**/*.html')
-    .pipe(gulp.dest('dist'));
+    gulp.src('src/**/*.html')
+        .pipe(gulp.dest('dist'));
+    gulp.src('src/images/**/*.*')
+        .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('default', ['sass', 'copy'], function() {

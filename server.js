@@ -11,20 +11,20 @@ app.get('/', function(req, res) {
     res.sendFile('index.html', options);
 });
 
-app.get('/produkt', function(req, res) {
+app.get('/produktet', function(req, res) {
     res.sendFile('product.html', options);
 });
 
-app.get('/priser', function(req, res) {
-    res.sendFile('prices.html', options);
+app.get('/prisen', function(req, res) {
+    res.sendFile('price.html', options);
 });
 
-app.get('/om', function(req, res) {
+app.get('/om-os', function(req, res) {
     res.sendFile('about.html', options);
 });
 
-app.get('/vilkaar', function(req, res) {
-    res.sendFile('terms.html', options);
+app.get('/kontakt', function(req, res) {
+    res.sendFile('contact.html', options);
 })
 
 app.use(function(req, res) {
