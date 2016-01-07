@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp sass && gulp copy && node server.js",
+    "install": "npm install && bower install && gulp sass && gulp copy",
+    "start": "node server.js",
     "build": "gulp sass && gulp copy"
   },
   "repository": {
