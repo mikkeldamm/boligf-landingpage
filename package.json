@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "prestart": "gulp sass && gulp copy",
     "build": "gulp sass && gulp copy"
   },
   "repository": {
