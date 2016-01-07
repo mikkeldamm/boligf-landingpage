@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "prestart": "gulp sass && gulp copy",
+    "start": "gulp sass && gulp copy && node server.js",
     "build": "gulp sass && gulp copy"
   },
   "repository": {
