@@ -1,4 +1,6 @@
 var express = require('express');
+var forceDomain = require('forcedomain');
+
 var app = express();
 
 var options = {
@@ -6,6 +8,10 @@ var options = {
 };
 
 app.use(express.static('dist'));
+
+app.use(forceDomain({
+    hostname: 'boligf.dk'
+}));
 
 app.get('/', function(req, res) {
     res.sendFile('index.html', options);
