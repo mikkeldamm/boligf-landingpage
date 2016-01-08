@@ -19,7 +19,6 @@
   "homepage": "https://github.com/mikkeldamm/boligf-landingpage#readme",
   "dependencies": {
     "express": "^4.13.3",
-    "forcedomain": "^0.6.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-load-plugins": "^0.8.0",
