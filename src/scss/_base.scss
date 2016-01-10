@@ -160,19 +160,26 @@ h1, h2, h3, h4, h5, h6, .heading {
     -webkit-transition: -webkit-transform .6s;
     transition: transform .6s;
     
+    
     @include breakpoint(large) {
         
         width: 50%;
         left: -50%;
     }
     
-    .navigation-items {
+    .navigation-items, 
+    .navigation-footer-items {
         
         position: absolute;
         width: 100%;
         top: 0;
         left: 0;
-        bottom: 0;
+        bottom: 65px;
+        
+        @include breakpoint(large) {
+            
+            bottom: 93px;
+        }
         
         ul {
             
@@ -275,6 +282,46 @@ h1, h2, h3, h4, h5, h6, .heading {
                                 opacity: 1;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    
+    .navigation-footer-items {
+        
+        top: auto;
+        bottom: 0px;
+        height: 65px;
+        
+        @include breakpoint(large) {
+                            
+            height: 93px;
+        }
+        
+        ul li {
+            
+            height: 100%;
+            
+            a {
+                
+                &.item1 {
+                    
+                    background-color: #999C64;
+                }
+                
+                &.item2 {
+                    
+                    background-color: #B5AF69;
+                }
+                
+                &:hover {
+                        
+                    .box {
+                    
+                        -webkit-transform: none;
+                        -ms-transform: none;
+                        transform: none;
                     }
                 }
             }
