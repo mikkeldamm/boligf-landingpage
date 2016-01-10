@@ -7,8 +7,11 @@ var options = {
     root: __dirname + '/dist/'
 };
 
+var oneYear = new Date();
+oneYear.setMonth(oneYear.getMonth() + 6);
+
 app.use(compression());
-app.use(express.static('dist'));
+app.use(express.static('dist', { maxAge: oneYear }));
 
 app.get('/', function(req, res) {
     res.sendFile('index.html', options);
