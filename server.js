@@ -1,4 +1,5 @@
 var express = require('express');
+var compression = require('compression')
 
 var app = express();
 
@@ -6,6 +7,7 @@ var options = {
     root: __dirname + '/dist/'
 };
 
+app.use(compression());
 app.use(express.static('dist'));
 
 app.get('/', function(req, res) {
@@ -31,8 +33,6 @@ app.get('/kontakt', function(req, res) {
 app.use(function(req, res) {
     res.sendFile('404.html', options);
 });
-
-
 
 app.listen(process.env.PORT || 8080);
 

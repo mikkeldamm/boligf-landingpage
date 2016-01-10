@@ -1,5 +1,6 @@
-var gulp = require('gulp');
-var $    = require('gulp-load-plugins')();
+var gulp        = require('gulp');
+var minifyCss   = require('gulp-minify-css');
+var $           = require('gulp-load-plugins')();
 
 var sassPaths = [
   'bower_components/foundation-sites/scss'
@@ -8,12 +9,13 @@ var sassPaths = [
 gulp.task('sass', function() {
   return gulp.src('src/scss/app.scss')
     .pipe($.sass({
-      includePaths: sassPaths
+        includePaths: sassPaths
     })
-      .on('error', $.sass.logError))
+    .on('error', $.sass.logError))
     .pipe($.autoprefixer({
-      browsers: ['last 2 versions', 'ie >= 9']
+        browsers: ['last 2 versions', 'ie >= 9']
     }))
+    .pipe(minifyCss())
     .pipe(gulp.dest('dist/css'));
 });
 
