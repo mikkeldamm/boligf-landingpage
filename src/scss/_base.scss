@@ -18,6 +18,13 @@ body {
     &.pushed {
         
         overflow: hidden;
+        
+        #header .button {
+            
+            opacity: 0;
+            z-index: -1 !important;
+            //display: none;
+        }
     }
 }
 
@@ -88,7 +95,8 @@ h1, h2, h3, h4, h5, h6, .heading {
         
         @include breakpoint(large) {
             
-            overflow: scroll;
+            overflow-y: scroll;
+            overflow-x: hidden;
             left: auto;
             right: 0;
         }
@@ -275,14 +283,6 @@ h1, h2, h3, h4, h5, h6, .heading {
 }
 
 
-
-
-p {
-    margin-bottom: 150px;
-}
-
-
-
 #header {
     
     position: fixed;
@@ -402,6 +402,106 @@ p {
                     transform: rotate(-45deg);
                 }
             }
+        }
+    }
+    
+    .button {
+        
+        display: none;
+    }
+    
+    @include breakpoint(medium) {
+        
+        .button {
+            
+            display: block;
+            background: #fff;
+            -webkit-transition: background .3s, opacity .2s;
+            position: absolute;
+            top: 39px;
+            right: 39px;
+            width: auto;
+            height: 50px;
+            color: #FFF;
+            font-weight: bold;
+            box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.1);
+            border-radius: 2px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            line-height: 47px;
+            text-decoration: none;
+            opacity: 1;
+            
+            span {
+                
+                padding: 0 1.4em;
+                display: block;
+                font-size: 0.9em;
+                text-transform: lowercase;
+            }
+        }
+        
+        .login-button {
+            
+            right: 99px;
+            background-color: #AFB910;
+            border-color: rgba(156, 165, 18, 0.4);
+            z-index: 443;
+        }
+        
+        .register-button {
+            
+            right: 198px;
+            background-color: #9FB910;
+            border-color: rgba(143, 167, 13, 0.4);
+            z-index: 442;
+        }
+    }
+}
+
+
+.content {
+    
+    padding: 2em;
+    font-size: 0.9em;
+    
+    @include breakpoint(medium) {
+     
+        padding: 3em;
+        font-size: 1em;
+    }
+    
+    @include breakpoint(large) {
+              
+        padding: 5em;
+    }
+    
+    h1 {
+        
+        margin-top: 0;
+    }
+    
+    > p {
+        
+        margin-bottom: 3em;
+    }
+    
+    article {
+        
+        border-top: 1px solid #ECC609;
+        
+        h2 {
+            
+            
+        }
+        
+        p {
+            
+            
+        }
+        
+        a {
+            
+            
         }
     }
 }

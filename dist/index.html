@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boligf sikrer forenings beboere og bestyrelses effektiv kommunikation og hjælper til at organisere det daglige liv i foreningen. Jeres online boligforneing vil styrke nabofællesskabet og skabe både engagement & tryghed.">
+    <meta name="description" content="Boligf sikrer din boligforenings beboere og bestyrelse effektiv kommunikation og hjælper til at organisere det daglige liv i foreningen. Jeres online boligforneing vil styrke nabofællesskabet og skabe både engagement & tryghed.">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <div id="header">
+    <header id="header">
         <button id="burger">
             <span class="bars">
                 <span class="bar bar1"></span>
@@ -18,13 +18,19 @@
                 <span class="bar bar3"></span>
             </span>
         </button>
-    </div>
+        <a href="http://app.boligf.dk/login" class="button login-button" title="Log ind">
+            <span>Log ind</span>
+        </a>
+        <a href="http://app.boligf.dk/register" class="button register-button" title="Tilmeld din boligforening">
+            <span>Tilmeld</span>
+        </a>
+    </header>
     <div id="layout">
         <nav id="navigation">
             <div class="navigation-items">
                 <ul>
                     <li>
-                        <a href="/produktet" class="item1">
+                        <a href="/produktet" class="item1" title="Produktet - hvad kan det?">
                             <div class="box">
                                 <span class="heading">Produktet</span>
                                 <span class="description">hvad kan det?</span>
@@ -32,7 +38,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/prisen" class="item2">
+                        <a href="/prisen" class="item2" title="Prisen - hvad koster det?">
                             <div class="box">
                                 <span class="heading">Prisen</span>
                                 <span class="description">hvad koster det?</span>
@@ -40,7 +46,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/om-os" class="item3">
+                        <a href="/om-os" class="item3" title="Om os - hvem står bag?">
                             <div class="box">
                                 <span class="heading">Om os</span>
                                 <span class="description">hvem står bag?</span>
@@ -48,7 +54,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/kontakt" class="item4">
+                        <a href="/kontakt" class="item4" title="Kontakt - nogen spørgsmål?">
                             <div class="box">
                                 <span class="heading">Kontakt</span>
                                 <span class="description">nogen spørgsmål?</span>
@@ -57,9 +63,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="navigation-footer-items">
-                Footer
-            </div>
         </nav>
         <div class="brand-box">
             <a class="brand" href="/">
@@ -67,19 +70,27 @@
                 <span class="heading">BoligForeninger</span>
             </a>
         </div>
-        <div class="content-box">
-            <div class="">
-                Test 2 josdjfsdfdspofpsdfpdsifpdip
-                <p>sdfsf</p>
-                <p>sdfsf</p>
-                <p>sdfsf</p>
-                <p>sdfsf</p>
-                <p>sdfsf</p>
-                <p>sdfsf</p>
-                <p>sdfsf</p>
-                <p>mikkel</p>
-            </div>
-        </div>  
+        <main class="content-box">
+            <section class="content">
+                <h1>Et moderne intranet til din boligforening</h1>
+                <p>
+                    Med Boligf får I alt information og kommunikation omkring jeres forening samlet ét sted. Alle beboere samt bestyrelse vil kunne se beboerliste, 
+                    skrive til alle, dele filer, booke fællesfaciliteter, gemme vigtige dokumenter og meget mere.
+                    <br><br>
+                    Boligf sørger også for at alt kommunikation og dokumentation online og sikkert gemt.
+                </p>
+                <article>
+                    <h2>Kommunikation foregår idag online</h2>
+                    <p>
+                        Nogen gange er et intranet bedre til at give information og vejledning til beboerne & bestyrelse. Vi i Boligf mener klart at som teknologien 
+                        er idag - og hvor den bevæger sig hen - så er et online websted til "min boligforening" et must.
+                        <br><br>
+                        Yderemere åbner et intranet også op for en række muligheder som kun web kan tilbyde.
+                        <a href="http://app.boligf.dk/register">Kom igang allerede idag</a>
+                    </p>
+                </article>
+            </section>
+        </main>  
     </div>
     <script>
         (function() {
