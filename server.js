@@ -31,7 +31,11 @@ app.get('/om-os', function(req, res) {
 
 app.get('/kontakt', function(req, res) {
     res.sendFile('contact.html', options);
-})
+});
+
+app.get('/google24cbf0ed875ce5fa.html', function(req, res) {
+    res.sendFile('google24cbf0ed875ce5fa.html', options);
+});
 
 app.use(function(req, res) {
     res.sendFile('404.html', options);
