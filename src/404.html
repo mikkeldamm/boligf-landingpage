@@ -1,19 +1,135 @@
 <!doctype html>
-<html class="no-js" lang="en">
-  <head>
+<html lang="da">
+<head>
+    <title>Fejl 404</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-      404
-      
-      Nogen gange er et intranet bedre til at give information og vejledning til beboerne & bestyrelse. Vi i Boligf mener klart at som teknologien 
-    er idag - og hvor den bevæger sig hen - så er et online websted til "min boligforening" et must.
-    <br><br>
-    Yderemere åbner et intranet også op for en række muligheder som kun web kan tilbyde.
-
-  </body>
+    <meta name="description" content="Boligf sikrer din boligforenings beboere og bestyrelse effektiv kommunikation og hjælper til at organisere det daglige liv i foreningen. Jeres online boligforneing vil styrke nabofællesskabet og skabe både engagement & tryghed.">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+    <header id="header">
+        <button id="burger">
+            <span class="bars">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </span>
+        </button>
+        <a href="http://boligf.dk/404" class="button login-button" title="Log ind">
+            <span>Log ind</span>
+        </a>
+        <a href="http://boligf.dk/404" class="button register-button" title="Tilmeld din boligforening">
+            <span>Tilmeld</span>
+        </a>
+    </header>
+    <div id="layout">
+        <nav id="navigation">
+            <div class="navigation-items">
+                <ul>
+                    <li>
+                        <a href="/produktet" class="item1" title="Produktet - hvad kan det?">
+                            <div class="box">
+                                <span class="heading">Produktet</span>
+                                <span class="description">hvad kan det?</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/priser" class="item2" title="Priser - hvad koster det?">
+                            <div class="box">
+                                <span class="heading">Priser</span>
+                                <span class="description">hvad koster det?</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/om-os" class="item3" title="Om os - hvem står bag?">
+                            <div class="box">
+                                <span class="heading">Om os</span>
+                                <span class="description">hvem står bag?</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/kontakt" class="item4" title="Kontakt - nogen spørgsmål?">
+                            <div class="box">
+                                <span class="heading">Kontakt</span>
+                                <span class="description">nogen spørgsmål?</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navigation-footer-items">
+                <ul>
+                    <li>
+                        <a href="http://boligf.dk/404" class="item1" title="Tilmeld din boligforening">
+                            <div class="box">
+                                <span class="heading">Tilmeld</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://boligf.dk/404" class="item2" title="Log ind">
+                            <div class="box">
+                                <span class="heading">Log ind</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="brand-box">
+            <a class="brand" href="/">
+                <img src="/images/boligflogoblack.svg" alt="Boligf - din boligforening på nettet" class="logo">
+                <span class="heading">BoligForeninger</span>
+            </a>
+        </div>
+        <main class="content-box">
+            <section class="content">
+                <h1>Vi kunne ikke finde den adresse du ledte efter?</h1>
+                <p>
+                    Hvis du prøver at finde din boligforening men indtastede den forkerte adresse, så kan du finde din forening her.
+                    Prøv eventuelt at kigge adressen efter igen, ellers er du meget velkommen til at skrive til <a href="mailto:info@boligf.dk">info@boligf.dk</a>
+                    hvis du har behov for hjælp eller lign.
+                </p>
+                <footer>
+                    <p>Boligf - +45 21 74 67 66 - info@boligf.dk</p>
+                </footer>
+            </section>
+        </main>  
+    </div>
+    <script>
+        (function() {
+            
+            var body = document.querySelector('body');
+            var layout = document.querySelector('#layout');
+            var menu = document.querySelector("#burger");
+            
+            menu.onclick = function() {
+                
+                if (layout.classList.contains("pushed")) {
+                    layout.classList.remove("pushed");
+                    menu.classList.remove("pushed");
+                    body.classList.remove("pushed");
+                } else {
+                    layout.classList.add("pushed");
+                    menu.classList.add("pushed");
+                    body.classList.add("pushed");
+                }
+            };
+            
+        })();
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-66664017-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
 </html>

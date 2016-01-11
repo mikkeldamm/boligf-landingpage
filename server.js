@@ -21,7 +21,7 @@ app.get('/produktet', function(req, res) {
     res.sendFile('product.html', options);
 });
 
-app.get('/prisen', function(req, res) {
+app.get('/priser', function(req, res) {
     res.sendFile('price.html', options);
 });
 
