@@ -11,7 +11,7 @@ var oneYear = new Date();
 oneYear.setMonth(oneYear.getMonth() + 6);
 
 app.use(compression());
-app.use(express.static('dist', { maxAge: oneYear }));
+app.use(express.static('dist'));
 
 app.get('/', function(req, res) {
     res.sendFile('index.html', options);

@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6, .heading {
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 700;
                 font-size: 1.22em;
-                margin-right: 0.5em;
+                margin-left: 0.1em; 
             }
         }
     }
@@ -526,6 +526,7 @@ h1, h2, h3, h4, h5, h6, .heading {
     
     h1 {
         
+        font-size: 2.2em;
         margin-top: 0;
     }
     
@@ -592,5 +593,18 @@ h1, h2, h3, h4, h5, h6, .heading {
             
             outline: none;
         }
+    }
+}
+
+footer {
+    
+    border-top: 1px solid #ECC91D;
+    margin-top: 3em;
+    
+    p {
+        
+        font-size: 0.9em;
+        color: #5C5C5C;
+        margin-bottom: 0;
     }
 }
