@@ -22,7 +22,7 @@ app.get('/produktet', function(req, res) {
 });
 
 app.get('/priser', function(req, res) {
-    res.sendFile('price.html', options);
+    res.sendFile('prices.html', options);
 });
 
 app.get('/om-os', function(req, res) {
