@@ -694,23 +694,49 @@ footer {
     
     margin-left: -.9375rem;
     margin-right: -.9375rem;
+    margin-bottom: 3em;
 }
 
 .price {
     
-    background-color: #FFFFFF;
+    display: block;
+    background-color: #FFF;
     border-radius: 2px;
-    padding: 3em 1em;
+    padding: 1em 1em 2.5em 1em;
     text-align: center;
     font-size: 1.2em;
     border: 1px solid #D6D4C9;
     margin: 0;
-    box-shadow: 1px 2px 1px 0px rgba(0,0,0,0.1);
+    box-shadow: 1px 2px 1px 0 rgba(0,0,0,.1);
+    cursor: pointer;
+    text-decoration: none;
+    
+    &:hover {
+        
+        border: 1px solid #ECC609;
+        box-shadow: 1px 2px 1px 0 rgba(0,0,0,.15);
+    }
+    
+    &.pro h3 {
+        
+        background-color: #D6D4B8;
+    }
+    
+    @include breakpoint(small down) {
+            
+        &:first-child {
+            
+            margin-bottom: 1.5em;
+        }
+    }
     
     h3 {
         
-        margin: 0 0 1em 0;
+        margin: 0 0 1em;
         font-size: 1.3em;
+        background-color: #ECC609;
+        padding: 0.5em 0;
+        border-radius: 2px;
     }
     
     .amount {
@@ -722,6 +748,8 @@ footer {
     .amount-description {
         
         display: block;
-        font-size: 1em;
+        font-size: 0.8em;
+        color: #686868;
+        margin-top: 0.4em;
     }
 }
