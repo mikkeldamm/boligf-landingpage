@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="da">
 <head>
-    <title>Hvad koster det at bruge Boligf?</title>
+    <title>Hvad koster det at bruge BoligF?</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boligf sikrer din boligforenings beboere og bestyrelse effektiv kommunikation og hjælper til at organisere det daglige liv i foreningen. Jeres online boligforneing vil styrke nabofællesskabet og skabe både engagement & tryghed.">
+    <meta name="description" content="BoligF sikrer din boligforenings beboere og bestyrelse effektiv kommunikation og hjælper til at organisere det daglige liv i foreningen. Jeres online boligforneing vil styrke nabofællesskabet og skabe både engagement & tryghed.">
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
@@ -17,11 +17,16 @@
                 <span class="bar bar3"></span>
             </span>
         </button>
-        <a href="http://boligf.dk/404" class="button login-button" title="Log ind">
+        <!--
+        <a href="https://app.boligf.dk/login" class="button login-button" title="Log ind">
             <span>Log ind</span>
         </a>
-        <a href="http://boligf.dk/404" class="button register-button" title="Tilmeld din boligforening">
+        <a href="https://app.boligf.dk/register" class="button register-button" title="Tilmeld dig her">
             <span>Tilmeld</span>
+        </a>
+        -->
+        <a href="/#nysgerrig" class="button curious-button" title="Er du nysgerrig for mere omkring BoligF?">
+            <span>Nysgerrig?</span>
         </a>
     </header>
     <div id="layout">
@@ -65,48 +70,63 @@
             <div class="navigation-footer-items">
                 <ul>
                     <li>
-                        <a href="http://boligf.dk/404" class="item1" title="Tilmeld din boligforening">
+                        <a id="footerCurious" href="/#nysgerrig" class="item2" title="Nysgerrig? så vær en af de første">
+                            <div class="box">
+                                <span class="heading">Nysgerrig?</span>
+                            </div>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="https://app.boligf.dk/register" class="item1" title="Tilmeld din boligforening">
                             <div class="box">
                                 <span class="heading">Tilmeld</span>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="http://boligf.dk/404" class="item2" title="Log ind">
+                        <a href="https://app.boligf.dk/login" class="item2" title="Log ind">
                             <div class="box">
                                 <span class="heading">Log ind</span>
                             </div>
                         </a>
                     </li>
+                    -->
                 </ul>
             </div>
         </nav>
         <div class="brand-box">
             <a class="brand" href="/">
-                <img src="/images/boligflogoblack.svg" alt="Boligf - din boligforening på nettet" class="logo">
+                <img src="/images/boligflogoblack.svg" alt="BoligF - din boligforening på nettet" class="logo">
                 <span class="heading">BoligForeninger</span>
             </a>
         </div>
         <main class="content-box">
             <section class="content">
                 <h1>Gratis at bruge</h1>
+                <!--
+                <div class="prices row">
+                    <div class="column small-12 medium-6">
+                        <div class="price">
+                            <h3>Standard</h3>
+                            <span class="amount">0 kr.</span>
+                            <span class="amount-description">per forening per måned</span>
+                        </div>
+                    </div>
+                    <div class="column small-12 medium-6">
+                        <div class="price">
+                            <h3>Udvidet</h3>
+                            <span class="amount">29 kr.</span>
+                            <span class="amount-description">per forening per måned</span>
+                        </div>
+                    </div>
+                </div>
+                -->
                 <p>
                     ....
                 </p>
-                <!--
-                <article>
-                    <h2>Hvilke funktioner får i?</h2>
-                    <p>
-                        Frygt ikke hvis lige netup den funktion du leder efter ikke er på listen, for Boligf er konstant under udvikling. <a href="/">Så tilmeld din boligforening</a> allerede i 
-                        dag og vær med til at gøre Boligf bedre. 
-                        <br><br>
-                        Til at starte med er nedenstående funktioner det som systemet kan i dag, men vi er meget interesseret i at høre fra jer omkring hvad systemet skal kunne
-                        og i vil derefter kunne følge udviklingen af det og få besked når det lanceres. 
-                    </p>
-                </article>
-                -->
                 <footer>
-                    <p>Boligf - +45 21 74 67 66 - info@boligf.dk</p>
+                    <p>BoligF - 21 74 67 66 - info@boligf.dk</p>
                 </footer>
             </section>
         </main>  
@@ -115,10 +135,14 @@
         (function() {
             
             var body = document.querySelector('body');
-            var layout = document.querySelector('#layout');
-            var menu = document.querySelector("#burger");
+            var layout = document.getElementById('layout');
+            var menu = document.getElementById("burger");
+            var curious = document.getElementById("footerCurious");
             
-            menu.onclick = function() {
+            menu.onclick = slideMenu;
+            curious.onclick = slideMenu;
+            
+            function slideMenu(e) {
                 
                 if (layout.classList.contains("pushed")) {
                     layout.classList.remove("pushed");
@@ -129,8 +153,7 @@
                     menu.classList.add("pushed");
                     body.classList.add("pushed");
                 }
-            };
-            
+            }
         })();
     </script>
     <script>

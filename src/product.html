@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="da">
 <head>
-    <title>Boligf har opslagstavler, kalendere, beboer kommunikation og meget mere</title>
+    <title>BoligF har opslagstavler, kalendere, beboer kommunikation og meget mere</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boligf sikrer din boligforenings beboere og bestyrelse effektiv kommunikation og hjælper til at organisere det daglige liv i foreningen. Jeres online boligforneing vil styrke nabofællesskabet og skabe både engagement & tryghed.">
+    <meta name="description" content="BoligF sikrer din boligforenings beboere og bestyrelse effektiv kommunikation og hjælper til at organisere det daglige liv i foreningen. Jeres online boligforneing vil styrke nabofællesskabet og skabe både engagement & tryghed.">
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
@@ -17,11 +17,16 @@
                 <span class="bar bar3"></span>
             </span>
         </button>
-        <a href="http://boligf.dk/404" class="button login-button" title="Log ind">
+        <!--
+        <a href="https://app.boligf.dk/login" class="button login-button" title="Log ind">
             <span>Log ind</span>
         </a>
-        <a href="http://boligf.dk/404" class="button register-button" title="Tilmeld din boligforening">
+        <a href="https://app.boligf.dk/register" class="button register-button" title="Tilmeld dig her">
             <span>Tilmeld</span>
+        </a>
+        -->
+        <a href="/#nysgerrig" class="button curious-button" title="Er du nysgerrig for mere omkring BoligF?">
+            <span>Nysgerrig?</span>
         </a>
     </header>
     <div id="layout">
@@ -65,25 +70,34 @@
             <div class="navigation-footer-items">
                 <ul>
                     <li>
-                        <a href="http://boligf.dk/404" class="item1" title="Tilmeld din boligforening">
+                        <a id="footerCurious" href="/#nysgerrig" class="item2" title="Nysgerrig? så vær en af de første">
+                            <div class="box">
+                                <span class="heading">Nysgerrig?</span>
+                            </div>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="https://app.boligf.dk/register" class="item1" title="Tilmeld din boligforening">
                             <div class="box">
                                 <span class="heading">Tilmeld</span>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="http://boligf.dk/404" class="item2" title="Log ind">
+                        <a href="https://app.boligf.dk/login" class="item2" title="Log ind">
                             <div class="box">
                                 <span class="heading">Log ind</span>
                             </div>
                         </a>
                     </li>
+                    -->
                 </ul>
             </div>
         </nav>
         <div class="brand-box">
             <a class="brand" href="/">
-                <img src="/images/boligflogoblack.svg" alt="Boligf - din boligforening på nettet" class="logo">
+                <img src="/images/boligflogoblack.svg" alt="BoligF - din boligforening på nettet" class="logo">
                 <span class="heading">BoligForeninger</span>
             </a>
         </div>
@@ -98,20 +112,20 @@
                     <span>Ahh, nu har min dørtelefon ikke virket i flere dage</span>
                     <span>Mon nogen af de andre beboere har set en rød damecykel?</span>
                     <br><br>
-                    Dette kan blot være nogle af de situationer og spørgsmål man kommer ud for når man er bosat i en forening. Det vil Boligf meget gerne hjælpe på
+                    Dette kan blot være nogle af de situationer og spørgsmål man kommer ud for når man er bosat i en forening. Det vil BoligF meget gerne hjælpe på
                     ved at levere et meget brugervenligt, specifikt og reklamefrit intranet til din boligforening, så kommunikation og viden er det helt korrekte sted. 
                     <br><br>
-                    Boligf er både et værktøj til bestyrelsen men også beboerne. Du og dine naboer kan se en beboerliste, skrive til alle, dele filer, 
+                    BoligF er både et værktøj til bestyrelsen men også beboerne. Du og dine naboer kan se en beboerliste, skrive til alle, dele filer, 
                     booke fællesfaciliteter, gemme vigtige dokumenter, diskutere og samarbejde.
                     <br><br>
-                    Vi ligger også meget vægt på at Boligf er tilpasset hvordan en boligforening kommunikere og agere, så derfor er ideer og funktioner udtænkt af os,
+                    Vi ligger også meget vægt på at BoligF er tilpasset hvordan en boligforening kommunikere og agere, så derfor er ideer og funktioner udtænkt af os,
                     altid i anden prioritet da vi fokusere mere på vores brugeres ønsker & input til at forbedre efter de behov I har derude.
                 </p>
                 <article>
                     <h2>Hvilke funktioner får i?</h2>
                     <p>
-                        Frygt ikke hvis lige netup den funktion du leder efter ikke er på listen, for Boligf er konstant under udvikling. <a href="/">Så tilmeld din boligforening</a> allerede i 
-                        dag og vær med til at gøre Boligf bedre. 
+                        Frygt ikke hvis lige netup den funktion du leder efter ikke er på listen, for BoligF er konstant under udvikling. <a href="/">Så tilmeld din boligforening</a> allerede i 
+                        dag og vær med til at gøre BoligF bedre. 
                         <br><br>
                         Til at starte med er nedenstående funktioner det som systemet kan i dag, men vi er meget interesseret i at høre fra jer omkring hvad systemet skal kunne
                         og i vil derefter kunne følge udviklingen af det og få besked når det lanceres. 
@@ -129,7 +143,7 @@
                     </div>
                 </article>
                 <footer>
-                    <p>Boligf - +45 21 74 67 66 - info@boligf.dk</p>
+                    <p>BoligF - 21 74 67 66 - info@boligf.dk</p>
                 </footer>
             </section>
         </main>  
@@ -138,10 +152,14 @@
         (function() {
             
             var body = document.querySelector('body');
-            var layout = document.querySelector('#layout');
-            var menu = document.querySelector("#burger");
+            var layout = document.getElementById('layout');
+            var menu = document.getElementById("burger");
+            var curious = document.getElementById("footerCurious");
             
-            menu.onclick = function() {
+            menu.onclick = slideMenu;
+            curious.onclick = slideMenu;
+            
+            function slideMenu(e) {
                 
                 if (layout.classList.contains("pushed")) {
                     layout.classList.remove("pushed");
@@ -152,8 +170,7 @@
                     menu.classList.add("pushed");
                     body.classList.add("pushed");
                 }
-            };
-            
+            }
         })();
     </script>
     <script>

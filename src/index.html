@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="da">
 <head>
-    <title>Boligf - din boligforening på nettet</title>
+    <title>BoligF - din boligforening på nettet</title>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Boligf sikrer din boligforenings beboere og bestyrelse effektiv kommunikation og hjælper til at organisere det daglige liv i foreningen. Jeres online boligforneing vil styrke nabofællesskabet og skabe både engagement & tryghed.">
+    <meta name="description" content="BoligF sikrer din boligforenings beboere og bestyrelse effektiv kommunikation og hjælper til at organisere det daglige liv i foreningen. Jeres online boligforneing vil styrke nabofællesskabet og skabe både engagement & tryghed.">
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
@@ -17,11 +17,16 @@
                 <span class="bar bar3"></span>
             </span>
         </button>
-        <a href="http://boligf.dk/404" class="button login-button" title="Log ind">
+        <!--
+        <a href="https://app.boligf.dk/login" class="button login-button" title="Log ind">
             <span>Log ind</span>
         </a>
-        <a href="http://boligf.dk/404" class="button register-button" title="Tilmeld din boligforening">
+        <a href="https://app.boligf.dk/register" class="button register-button" title="Tilmeld dig her">
             <span>Tilmeld</span>
+        </a>
+        -->
+        <a href="/#nysgerrig" class="button curious-button" title="Er du nysgerrig for mere omkring BoligF?">
+            <span>Nysgerrig?</span>
         </a>
     </header>
     <div id="layout">
@@ -65,25 +70,34 @@
             <div class="navigation-footer-items">
                 <ul>
                     <li>
-                        <a href="http://boligf.dk/404" class="item1" title="Tilmeld din boligforening">
+                        <a id="footerCurious" href="/#nysgerrig" class="item2" title="Nysgerrig? så vær en af de første">
+                            <div class="box">
+                                <span class="heading">Nysgerrig?</span>
+                            </div>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="https://app.boligf.dk/register" class="item1" title="Tilmeld din boligforening">
                             <div class="box">
                                 <span class="heading">Tilmeld</span>
                             </div>
                         </a>
                     </li>
                     <li>
-                        <a href="http://boligf.dk/404" class="item2" title="Log ind">
+                        <a href="https://app.boligf.dk/login" class="item2" title="Log ind">
                             <div class="box">
                                 <span class="heading">Log ind</span>
                             </div>
                         </a>
                     </li>
+                    -->
                 </ul>
             </div>
         </nav>
         <div class="brand-box">
             <a class="brand" href="/">
-                <img src="/images/boligflogoblack.svg" alt="Boligf - din boligforening på nettet" class="logo">
+                <img src="/images/boligflogoblack.svg" alt="BoligF - din boligforening på nettet" class="logo">
                 <span class="heading">BoligForeninger</span>
             </a>
         </div>
@@ -91,10 +105,10 @@
             <section class="content">
                 <h1>Et moderne intranet til din boligforening</h1>
                 <p>
-                    Med Boligf får I alt information og kommunikation omkring jeres boligforening samlet ét sted. Alle beboere samt bestyrelse vil kunne se beboerliste, 
+                    Med BoligF får I alt information og kommunikation omkring jeres boligforening samlet ét sted. Alle beboere samt bestyrelse vil kunne se beboerliste, 
                     skrive til alle, dele filer, booke fællesfaciliteter, gemme vigtige dokumenter og meget mere.
                     <br><br>
-                    Boligf sørger også for at alt kommunikation og dokumentation online og sikkert gemt.
+                    BoligF sørger også for at alt kommunikation og dokumentation online og sikkert gemt.
                 </p>
                 <article class="beta">
                     <h2>Vi er næsten klar så tilmeld dig og få besked før tid, så kan du være med til at præge systemet</h2>
@@ -103,24 +117,24 @@
                         <br><br>
                         Noget tid før lanceringen får alle tilmeldte fra denne formular besked om at de nu har mulighed for at prøve systemet. 
                         Ydermere giver det også dig mulighed for at præge systemet og dets funktioner da vi meget gerne vil holde en tæt dialog med 
-                        vores brugere så Boligf bliver tilpasset til jeres behov og ikke vores. 
+                        vores brugere så BoligF bliver tilpasset til jeres behov og ikke vores. 
                         <br><br>
                         Når du modtager en mail fra os omkring at systemet er klar til brug, vil der være 2 links. Et link til tilmeldingssiden hvor du kan 
                         oprette din forening og et link til vores funktionsliste hvor du kan bidrage med ideér og andet til systemet.
                         <br>
-                        <form action="//boligf.us12.list-manage.com/subscribe/post?u=f425e3f1d2c8072418c736e06&amp;id=8f321488d8" method="post" target="_blank" novalidate>
-                            <input type="text" name="EMAIL" required placeholder="Indtast din e-mail" />
+                        <form id="nysgerrig" action="//boligf.us12.list-manage.com/subscribe/post?u=f425e3f1d2c8072418c736e06&amp;id=8f321488d8" method="post" target="_blank" novalidate>
+                            <input id="emailField" type="text" name="EMAIL" required placeholder="Indtast din e-mail" />
                             <button type="submit">Tilmeld</button>
                         </form>
                         <br>
                         <i>
-                            Ved at tilmelde dig, vidergiver du kun din email til brug for notificering af når Boligf bliver lanceret. 
-                            Vi bruger IKKE din email adresse til andet. Hverken reklamer, beskeder eller anden form for "spam".
+                            Ved at tilmelde dig, vidergiver du kun din e-mail til brug for notificering af når BoligF bliver lanceret. 
+                            Vi bruger IKKE din e-mail adresse til andet. Hverken reklamer, beskeder eller anden form for "spam".
                         </i>
                     </p>
                 </article>
                 <footer>
-                    <p>Boligf - +45 21 74 67 66 - info@boligf.dk</p>
+                    <p>BoligF - 21 74 67 66 - info@boligf.dk</p>
                 </footer>
             </section>
         </main>  
@@ -129,10 +143,14 @@
         (function() {
             
             var body = document.querySelector('body');
-            var layout = document.querySelector('#layout');
-            var menu = document.querySelector("#burger");
+            var layout = document.getElementById('layout');
+            var menu = document.getElementById("burger");
+            var curious = document.getElementById("footerCurious");
             
-            menu.onclick = function() {
+            menu.onclick = slideMenu;
+            curious.onclick = slideMenu;
+            
+            function slideMenu(e) {
                 
                 if (layout.classList.contains("pushed")) {
                     layout.classList.remove("pushed");
@@ -143,8 +161,24 @@
                     menu.classList.add("pushed");
                     body.classList.add("pushed");
                 }
-            };
+            }
             
+            if ("onhashchange" in window) {
+                
+                function locationHashChanged() {
+                    if (location.hash === "#nysgerrig") {
+                        
+                        var emailField = document.getElementById("emailField");
+                        emailField.focus();
+                        emailField.setSelectionRange(0,1);
+                        emailField.setAttribute("autofocus", "autofocus");
+                    }
+                }
+
+                window.onhashchange = locationHashChanged;
+                
+                locationHashChanged();
+            }
         })();
     </script>
     <script>
